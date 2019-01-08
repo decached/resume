@@ -1,0 +1,56 @@
+/*
+ * base.css
+ * Copyright (C) 2018 Akash Kothawale
+ *
+ * Distributed under terms of the MIT license.
+ */
+
+body {
+    background: white;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+span.tab-space {
+    padding-left:2em;
+}
+
+.title {
+    background-color: #34495E;
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h4, h5 {
+    color: #34495E;
+    font-weight: bold;
+}
+
+div.jumbotron a {
+    color: white;
+}
+
+.headings {
+    /* font-weight: bold; */
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+span.location {
+}
+
+
+ul {
+    padding-left: 1em;
+    margin-bottom: 0.7em;
+}
+
+span.mono {
+    font-family: monospace;
+}

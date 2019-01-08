@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Akash Kothawale - Resume</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:500" rel="stylesheet">
+        <link rel="stylesheet" href="template.css">
+    </head>
+    <body>
+        {{ #personal }}
+        <div class="jumbotron title pb-4 mb-3 pt-4">
+            <div class="container">
+                <h1 class="display-4 headings">Akash Kothawale</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-1"> <strong>Phone</strong> </div>
+                            <div class="col"> <span class="tab-space"><a href="tel:{{ phone }}">{{ phone }}</a></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"> <strong>Email</strong> </div>
+                            <div class="col"> <span class="tab-space"> <a target="_blank" href="mailto:{{ email }}">{{ email }}</a></span></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-1"> <strong>LinkedIn</strong> </div>
+                            <div class="col"> <span class="tab-space"> <a target="_blank" href="https://www.linkedin.com/in/{{ linkedin }}">linkedin.com/in/{{ linkedin }}</a></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"> <strong>GitHub</strong> </div>
+                            <div class="col"> <span class="tab-space"> <a target="_blank" href="https://github.com/{{ github }}">github.com/{{ github }}</a></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ /personal }}
+
+        <div class="container">
+            <div id="education" class="mb-1">
+                <h4>Education</h4>
+                <hr class="mt-1 mb-1">
+
+                {{#education}}
+                <div class="row">
+                    <div class="col-2">{{ dates }}</div>
+                    <div class="col">
+                        <div class="row headings">
+                            <div class="col-*"> <h5>{{ degree }}</h5> </div>
+                            <div class="col"><span class="float-right">{{ school }}</span></div> 
+                        </div>
+                    </div>
+                </div>
+                {{/education}}
+            </div>
+
+            <div id="skills" class="mb-2">
+                <h4>Technical Skills</h4>
+                <hr class="mt-1 mb-1">
+
+                {{ #tech-skills }}
+                <div class="row">
+                    <div class="col-2">{{ type }}</div>
+                    <div class="col">
+                        <div class="row headings">
+                            <div class="col p-0">
+                                {{ skills }}
+                                <!-- {{ #skills-list }} -->
+                                <!-- <span class="badge badge-info">{{ . }}</span> -->
+                                <!-- {{ /skills-list }} -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ /tech-skills }}
+            </div>
+
+            <div id="experience">
+                <h4>Experience</h4>
+                <hr class="mt-1 mb-1">
+
+                {{#experience}}
+
+                <div class="row ">
+                    <div class="col-2">{{ dates }}</div>
+                    <div class="col">
+                        <div class="row headings">
+                            <div class="col-* p-0"> <h5>{{ position }}</h5> </div>
+                            <div class="col p-0"> 
+                                <span class="float-right">
+                                    <a target="_blank" href="{{ company_url }}">{{ company }}</a>
+                                    {{ location }}
+                                </span>
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <em>{{ tech }}</em>
+                        </div>
+                        <div class="row">
+                            <ul>
+                                {{#description}}
+                                <li>{{{ . }}}</li>
+                                {{/description}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                {{/experience}}
+            </div>
+
+            <div id="projects">
+                <h4>Projects</h4>
+                <hr class="mt-1 mb-1">
+
+                {{#projects}}
+
+                <div class="row">
+                    <div class="col-2">{{ tech }}</div>
+                    <div class="col">
+                        <div class="row headings">
+                          <div class="col-*"> <h5>{{ name }}</h5> </div>
+                          {{ #url }}
+                            <div class="col"> 
+                                <span class="float-right">
+                                    <a target="_blank" href="{{ url }}">{{ url-name }}</a>
+                                </span>
+                            </div>
+                          {{ /url }}
+                        </div>
+                        <div class="row">
+                            <ul>
+                                {{#description}}
+                                <li>{{{ . }}}</li>
+                                {{/description}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                {{/projects}}
+
+                <div class="row">
+                    <div class="col-2"><span>More <a href="https://github.com/decached">@decached</a></span></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
