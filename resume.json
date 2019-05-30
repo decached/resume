@@ -1,0 +1,69 @@
+{
+  "personal": {
+    "name": "Itachi Uchiha",
+    "phone": "101-010-1010",
+    "email": "itachi@akatsuki.com",
+    "linkedin": "itachi",
+    "github": "itachi"
+  },
+  "education": [
+    {
+      "dates": "8/2002 - 5/2003",
+      "degree": "M.S. in Ninja",
+      "school": "Chunin Exams of 5 Villages"
+    },
+    {
+      "dates": "8/2001 - 5/2002",
+      "degree": "B.S. in Ninja",
+      "school": "Ninja Academy of Hidden Leaf Village"
+    }
+  ],
+  "tech-skills": [
+    {
+      "type": "Languages",
+      "skills": "Japanese, English (dubbed)"
+    },
+    {
+      "type": "Jutsu",
+      "skills": "Susanoo, Amaterasu, Tsukuyomi"
+    }
+  ],
+  "experience": [
+    {
+      "dates": "5/2010 - 8/2010",
+      "position": "Rogue Ninja",
+      "company": "Akatsuki",
+      "company_url": "https://akatsuki.com",
+      "location": "(Unknown)",
+      "tech": "Susanoo",
+      "description": [
+        "Identified bottlenecks in security of all hidden villages",
+        "Use Susanoo to destroy opponents"
+      ]
+    },
+    {
+      "dates": "7/2007 - 3/2009",
+      "position": "Anbu Captain",
+      "company": "Hidden Leaf",
+      "company_url": "https://konohagakure.com",
+      "location": "(Konoha)",
+      "tech": "Amaterasu",
+      "description": [
+        "Teamed up with Shisui Uchiha to achieve 12% improvement in village security"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "tech": "",
+      "name": "Uchiha Clan Massacre", 
+      "url-name": "itachi/uchicha-clan-massacre",
+      "url": "https://github.com/itachi/uchiha-clan-massacre",
+      "description": [
+        "Infiltrates hidden leaf village with ease",
+        "Destroys a clan completely",
+        "Uses anti-village (rogue) ninja headband"
+      ]
+    }
+  ]
+}
